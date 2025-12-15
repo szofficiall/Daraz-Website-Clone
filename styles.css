@@ -8,6 +8,12 @@ body {
     background-color: rgb(245, 245, 245);
 }
 
+/* Make images responsive by default */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 /* NavBar */
 
 .header-web {
@@ -18,8 +24,9 @@ body {
 
 .nav-top-info {
     height:25px;
-    margin-left:160px;
-    margin-right:160px;
+    max-width:1200px;
+    margin:0 auto;
+    padding:0 16px;
 }
 
 .nav-top-links {
@@ -128,21 +135,25 @@ body {
 
 .outer-nav-bottom-info {
     padding: 5px;
-    margin-left: 130px;
-    margin-right: 130px;
+    max-width:1200px;
+    margin:0 auto;
+    padding-left:16px;
+    padding-right:16px;
 }
 
 .inner-nav-bottom-info {
     display:flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    gap: 12px;
 }
 
 .search-bar {
     position: relative;
     display:flex;
     justify-content: space-between;
-    width:800px;
+    flex: 1 1 400px;
+    max-width: 800px;
     height:40px;
 }
 
@@ -233,7 +244,7 @@ body {
 /* Hero Section */
 .hero-section {
     display: flex;
-    height:528px;
+    min-height:50vh;
     position: relative;
     background-size: cover;
     justify-content: center;
@@ -255,7 +266,9 @@ body {
 #slider figure img {
     float: left;
     width: 20%;
+    max-width: none;
 }
+
 
 @keyframes slider {
     0% {
@@ -592,6 +605,43 @@ header {
     top: 0;
     z-index: 9999;
     filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0,0.2));
+}
+
+/* Responsive layout tweaks */
+@media (max-width: 1024px) {
+    .nav-top-links { width: 60%; }
+    .hero-tag { width: 80%; font-size: 0.85rem; }
+    .all-categories, .for-you { margin-left: 5%; margin-right: 5%; }
+    .categories { width: 120px; height: 120px; }
+    .card-desc { width: 160px; }
+}
+
+@media (max-width: 768px) {
+    .inner-nav-bottom-info {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .nav-logo { order: 1; }
+    .search-bar { order: 2; width: 100%; max-width: none; }
+    .search { height:40px; }
+    .user-login, .sign-up, .lang-select, .cart { order: 3; }
+    .hero-tag { width: 95%; bottom: 10px; font-size: 0.8rem; }
+    .hero-section { align-items: center; }
+    .category-first-section, .category-second-section { justify-content: center; }
+    .cards-row { flex-wrap: wrap; gap: 12px; }
+    .item-card { width: calc(50% - 12px); }
+    .footpanel { flex-direction: column; gap: 20px; width: 90%; }
+}
+
+@media (max-width: 480px) {
+    .nav-top-links { display: none; }
+    .daraz-logo { width: 100px; }
+    .search { font-size: 0.95rem; }
+    .hero-tag { flex-wrap: wrap; height: auto; padding: 8px; }
+    .categories { width: 100px; height: 100px; }
+    .item-card { width: 100%; }
+    .card-desc { width: 100%; }
+    .main-text h2 { font-size: 1.1rem; }
 }
 
 
