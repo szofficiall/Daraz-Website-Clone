@@ -465,46 +465,57 @@
     </div>
 
     <!-- Login Modal -->
-<div id="login-modal" class="modal">
-    <div class="modal-content">
-        <span class="close-btn login-close">&times;</span>
-        <h2>Login</h2>
-        <form id="login-form">
-            <label for="login-email">Email</label>
-            <input type="email" id="login-email" placeholder="Enter your email" required>
-            
-            <label for="login-password">Password</label>
-            <input type="password" id="login-password" placeholder="Enter your password" required>
-            
-            <button type="submit">Login</button>
-        </form>
-        <p>Don't have an account? <span id="open-signup">Sign Up</span></p>
-    </div>
-</div>
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn login-close">&times;</span>
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="login-email">Email</label>
+                <input type="email" id="login-email" placeholder="Enter your email" required>
 
-<!-- Signup Modal -->
-<div id="signup-modal" class="modal">
-    <div class="modal-content">
-        <span class="close-btn signup-close">&times;</span>
-        <h2>Sign Up</h2>
-        <form id="signup-form">
-            <label for="signup-name">Full Name</label>
-            <input type="text" id="signup-name" placeholder="Enter your name" required>
-            
-            <label for="signup-email">Email</label>
-            <input type="email" id="signup-email" placeholder="Enter your email" required>
-            
-            <label for="signup-password">Password</label>
-            <input type="password" id="signup-password" placeholder="Enter your password" required>
-            
-            <button type="submit">Sign Up</button>
-        </form>
-        <p>Already have an account? <span id="open-login">Login</span></p>
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" placeholder="Enter your password" required>
+
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <span id="open-signup">Sign Up</span></p>
+        </div>
     </div>
-</div>
+
+    <!-- Signup Modal -->
+    <div id="signup-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn signup-close">&times;</span>
+            <h2>Sign Up</h2>
+            <form id="signup-form">
+                <label for="signup-name">Full Name</label>
+                <input type="text" id="signup-name" placeholder="Enter your name" required>
+
+                <label for="signup-email">Email</label>
+                <input type="email" id="signup-email" placeholder="Enter your email" required>
+
+                <label for="signup-password">Password</label>
+                <input type="password" id="signup-password" placeholder="Enter your password" required>
+
+                <button type="submit">Sign Up</button>
+            </form>
+            <p>Already have an account? <span id="open-login">Login</span></p>
+        </div>
+    </div>
 
 
 </body>
+<script>
+    // Select all category items
+    const categories = document.querySelectorAll('.categories.item');
+
+    // Loop through each category and add a click event
+    categories.forEach(category => {
+        category.addEventListener('click', () => {
+            window.location.href = '404.html'; // Redirect to 404 page
+        });
+    });
+</script>
 <script>
     const modal = document.getElementById('item-modal');
     const modalImg = document.getElementById('modal-img');
