@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    font-family: "Helvetica Neue", Helvetica, Tahoma, Arial,Roboto-Regular, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Tahoma, Arial, Roboto-Regular, sans-serif;
     box-sizing: border-box;
 }
 
@@ -14,24 +14,25 @@ img {
     height: auto;
     display: block;
 }
+
 /* NavBar */
 
 .header-web {
     height: 90px;
     background-color: rgb(248, 86, 6);
-    color:white;
+    color: white;
 }
 
 .nav-top-info {
-    height:25px;
-    max-width:1200px;
-    margin:0 auto;
-    padding:0 16px;
+    height: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
 }
 
 .nav-top-links {
     display: flex;
-    width:40%;
+    width: 40%;
     justify-content: space-between;
     font-size: .75rem;
     padding-top: 5px;
@@ -43,37 +44,38 @@ img {
 }
 
 .daraz-logo {
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
     background-image: url("images/NavBar/daraz-logo.png");
     background-size: cover;
 }
 
 .nav-link {
-    color:white;
+    color: white;
     text-decoration: none;
     transition-property: all;
     transition-duration: 100ms;
-    transition-timing-function:ease-in-out;
+    transition-timing-function: ease-in-out;
 }
 
 .nav-link:hover {
-    color:rgb(219, 219, 219);
+    color: rgb(219, 219, 219);
 }
 
 #nav-help-dropdown {
     position: relative;
     display: none;
-    
+
 }
+
 #nav-help-dropdown ul {
     list-style-type: none;
 }
 
 #nav-triangle {
     position: absolute;
-    top:5px;
-    left:30px;
+    top: 5px;
+    left: 30px;
     background-color: white;
     width: 15px;
     height: 15px;
@@ -91,8 +93,8 @@ img {
     flex-wrap: wrap;
     background-color: white;
     z-index: 10000;
-    top:10px;
-    left:-70px;
+    top: 10px;
+    left: -70px;
 }
 
 .nav-list-ele {
@@ -102,6 +104,7 @@ img {
 .nav-list-ele:nth-child(7) {
     margin: 0;
 }
+
 .nav-list-ele i {
     font-size: 1.2rem;
 }
@@ -114,7 +117,7 @@ img {
 }
 
 .nav-list-ele a:hover {
-    color:#f85606;
+    color: #f85606;
     text-decoration: underline;
 }
 
@@ -127,6 +130,7 @@ img {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -135,14 +139,14 @@ img {
 
 .outer-nav-bottom-info {
     padding: 5px;
-    max-width:1200px;
-    margin:0 auto;
-    padding-left:16px;
-    padding-right:16px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .inner-nav-bottom-info {
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 12px;
@@ -150,17 +154,17 @@ img {
 
 .search-bar {
     position: relative;
-    display:flex;
+    display: flex;
     justify-content: space-between;
     flex: 1 1 400px;
     max-width: 800px;
-    height:40px;
+    height: 40px;
 }
 
 
 .search {
     padding-left: 10px;
-    width:100%;
+    width: 100%;
     font-size: 1rem;
     border: none;
     border-radius: 10px;
@@ -171,12 +175,12 @@ img {
     align-items: center;
     justify-content: center;
     position: absolute;
-    right:10px;
-    top:5px;
+    right: 10px;
+    top: 5px;
     width: 50px;
     height: 30px;
     background-color: rgb(255, 225, 210);
-    color:rgb(248, 86, 6);
+    color: rgb(248, 86, 6);
     border-radius: 20%;
     font-size: 1.2rem;
 }
@@ -185,35 +189,36 @@ img {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width:75px;
-    height:40px;
+    width: 75px;
+    height: 40px;
 }
 
 .sign-up {
     display: flex;
     align-items: center;
     justify-content: center;
-    width:60px;
-    height:40px;
+    width: 60px;
+    height: 40px;
 }
 
 .lang-select {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width:60px;
-    height:40px;
-    
+    width: 60px;
+    height: 40px;
+
 }
 
 .cart {
     display: flex;
     align-items: center;
     justify-content: center;
-    width:40px;
-    height:40px;
+    width: 40px;
+    height: 40px;
 
 }
+
 .ele-text {
     font-size: 0.8rem;
     font-weight: bold;
@@ -244,7 +249,7 @@ img {
 /* Hero Section */
 .hero-section {
     display: flex;
-    min-height:50vh;
+    min-height: 50vh;
     position: relative;
     background-size: cover;
     justify-content: center;
@@ -274,27 +279,35 @@ img {
     0% {
         left: 0;
     }
+
     20% {
         left: 0;
     }
+
     25% {
         left: -100%;
     }
+
     45% {
         left: -100%;
     }
+
     50% {
         left: -200%;
     }
+
     70% {
         left: -200%;
     }
+
     75% {
         left: -300%;
     }
+
     95% {
         left: -300%;
     }
+
     100% {
         left: -400%;
     }
@@ -317,7 +330,7 @@ img {
     transition-property: all;
     transition-duration: 200ms;
     transition-delay: 100ms;
-    transition-timing-function:ease-in-out;
+    transition-timing-function: ease-in-out;
 }
 
 .hero-tag:hover {
@@ -326,11 +339,11 @@ img {
 }
 
 .main-hr {
-    color:rgb(160, 160, 160);
+    color: rgb(160, 160, 160);
 }
 
 .hero-tag-ele {
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
 }
@@ -361,14 +374,14 @@ img {
 }
 
 .categories {
-    display:flex;
-    flex-direction : column;
+    display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     background-color: white;
     width: 145px;
     height: 145px;
-    margin:5px;
+    margin: 5px;
     padding: 10px;
 }
 
@@ -452,8 +465,8 @@ img {
 
 .category-img {
     width: 80px;
-    height:80px;
-    background-size:contain;
+    height: 80px;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
@@ -465,7 +478,7 @@ img {
 }
 
 .cards-row {
-    
+
     display: flex;
     justify-content: space-between;
 
@@ -477,6 +490,7 @@ img {
     margin-right: 1.5%;
     margin-bottom: 25px;
 }
+
 .card-desc {
     width: 190px;
     padding: 10px;
@@ -509,23 +523,24 @@ img {
 
 /* Footer */
 .mainfooter {
-    display:flex;
+    display: flex;
     justify-content: center;
 }
 
 .footpanel {
     display: flex;
     justify-content: space-between;
-    width:80%;
+    width: 80%;
     margin-top: 30px;
 }
 
 .country-section {
-    display:flex;
+    display: flex;
     justify-content: flex-start;
     align-items: center;
-    
+
 }
+
 #pakistan {
     background-image: url("images/Footer/Countries Flag/Pakistan.png");
 }
@@ -547,8 +562,8 @@ img {
 }
 
 .country-image {
-    width:25px;
-    height:25px;
+    width: 25px;
+    height: 25px;
     margin-right: 5px;
     background-size: cover;
 }
@@ -557,20 +572,20 @@ img {
     color: rgb(248, 86, 6);
     font-weight: 500;
     font-size: 1.2rem;
-    margin-bottom:10px;
-    margin-top:30px;
+    margin-bottom: 10px;
+    margin-top: 30px;
 }
 
 .footpanel a {
-    display:block;
+    display: block;
     font-size: 0.9rem;
-    padding-top:5px
+    padding-top: 5px
 }
 
 
 .countries-footer {
-    display:flex;
-    width:230px;
+    display: flex;
+    width: 230px;
     flex-wrap: wrap;
 }
 
@@ -586,7 +601,7 @@ img {
 }
 
 .payment-method img {
-    margin-right:5px;
+    margin-right: 5px;
     margin-bottom: 5px;
 }
 
@@ -604,16 +619,34 @@ header {
     position: sticky;
     top: 0;
     z-index: 9999;
-    filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0,0.2));
+    filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.2));
 }
 
 /* Responsive layout tweaks */
 @media (max-width: 1024px) {
-    .nav-top-links { width: 60%; }
-    .hero-tag { width: 80%; font-size: 0.85rem; }
-    .all-categories, .for-you { margin-left: 5%; margin-right: 5%; }
-    .categories { width: 120px; height: 120px; }
-    .card-desc { width: 160px; }
+    .nav-top-links {
+        width: 60%;
+    }
+
+    .hero-tag {
+        width: 80%;
+        font-size: 0.85rem;
+    }
+
+    .all-categories,
+    .for-you {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .categories {
+        width: 120px;
+        height: 120px;
+    }
+
+    .card-desc {
+        width: 160px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -621,34 +654,336 @@ header {
         flex-wrap: wrap;
         gap: 8px;
     }
-    .nav-logo { order: 1; }
-    .search-bar { order: 2; width: 100%; max-width: none; }
-    .search { height:40px; }
-    .user-login, .sign-up, .lang-select, .cart { order: 3; }
-    .hero-tag { width: 95%; bottom: 10px; font-size: 0.8rem; }
-    .hero-section { align-items: center; }
-    .category-first-section, .category-second-section { justify-content: center; }
-    .cards-row { flex-wrap: wrap; gap: 12px; }
-    .item-card { width: calc(50% - 12px); }
-    .footpanel { flex-direction: column; gap: 20px; width: 90%; }
+
+    .nav-logo {
+        order: 1;
+    }
+
+    .search-bar {
+        order: 2;
+        width: 100%;
+        max-width: none;
+    }
+
+    .search {
+        height: 40px;
+    }
+
+    .user-login,
+    .sign-up,
+    .lang-select,
+    .cart {
+        order: 3;
+    }
+
+    .hero-tag {
+        width: 95%;
+        bottom: 10px;
+        font-size: 0.8rem;
+    }
+
+    .hero-section {
+        align-items: center;
+    }
+
+    .category-first-section,
+    .category-second-section {
+        justify-content: center;
+    }
+
+    .cards-row {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .item-card {
+        width: calc(50% - 12px);
+    }
+
+    .footpanel {
+        flex-direction: column;
+        gap: 20px;
+        width: 90%;
+    }
 }
 
 @media (max-width: 480px) {
-    .nav-top-links { display: none; }
-    .daraz-logo { width: 100px; }
-    .search { font-size: 0.95rem; }
-    .hero-tag { flex-wrap: wrap; height: auto; padding: 8px; }
-    .categories { width: 100px; height: 100px; }
-    .item-card { width: 100%; }
-    .card-desc { width: 100%; }
-    .main-text h2 { font-size: 1.1rem; }
+    .nav-top-links {
+        display: none;
+    }
+
+    .daraz-logo {
+        width: 100px;
+    }
+
+    .search {
+        font-size: 0.95rem;
+    }
+
+    .hero-tag {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 8px;
+    }
+
+    .categories {
+        width: 100px;
+        height: 100px;
+    }
+
+    .item-card {
+        width: 100%;
+    }
+
+    .card-desc {
+        width: 100%;
+    }
+
+    .main-text h2 {
+        font-size: 1.1rem;
+    }
 }
 
+/* Add curved corners and hover shadows for categories */
+.categories {
+    border-radius: 20px;
+    /* smooth curves */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
 
+.categories:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
 
+/* Category images rounded */
+.category-img {
+    border-radius: 15px;
+}
 
+/* Hero Tag smooth curve and shadow */
+.hero-tag {
+    border-radius: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
 
+/* "Just for You" Cards Styling */
+.item-card {
+    border-radius: 25px;
+    /* curved card edges */
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
 
+.item-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
 
+/* Card image rounded */
+.item-card img {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
 
+/* Card description padding and rounded bottom */
+.card-desc {
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
 
+/* Responsive tweaks for better mobile look */
+@media (max-width: 768px) {
+    .categories {
+        width: 110px;
+        height: 110px;
+    }
+
+    .category-img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .item-card {
+        width: calc(50% - 12px);
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .categories {
+        width: 90px;
+        height: 90px;
+    }
+
+    .category-img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .item-card {
+        width: 100%;
+    }
+}
+
+/* Optional: smooth hover for hero tags */
+.hero-tag:hover {
+    opacity: 1;
+    transform: scale(1.02);
+}
+
+/* Modal styling */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    z-index: 100000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #000;
+}
+
+#buy-now-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #f85606;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#buy-now-btn:hover {
+    background-color: #d84704;
+}
+
+.payment-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.payment-section h4 {
+    color: #f85606;
+    margin-bottom: 10px;
+}
+
+.payment-methods {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.payment-methods img {
+    width: 50px;
+    height: auto;
+}
+
+/* Modal Overlay */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+    padding-top: 60px;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    position: relative;
+}
+
+/* Close Button */
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: black;
+}
+
+/* Form Styles */
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content label {
+    margin: 10px 0 5px;
+}
+
+.modal-content input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.modal-content button {
+    padding: 10px;
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    background-color: #ff3b2e;
+}
+
+.modal-content p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.modal-content span {
+    color: #ff6f61;
+    cursor: pointer;
+}
